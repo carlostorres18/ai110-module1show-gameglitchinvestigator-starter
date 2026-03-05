@@ -7,6 +7,17 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 - What did the game look like the first time you ran it?
 - List at least two concrete bugs you noticed at the start  
   (for example: "the secret number kept changing" or "the hints were backwards").
+  - So what I noticed when first trying the app, i had to manually delete the first guess that I had made and then make a new guess
+  - When pressing new game, it would appear that a new game was created, but when inputting a guess it would not do anything.
+  - When inspecting the hints snippet that the webpage has, it seems that it keeps track of guesses, including those of previous games even when a new one had already started.
+  - It appears to be that once you win or lose a game once, you can no longer restart a new game from the webpage itself, but rather you have to stop the application from running and restart the application once again
+  - 'Enter' key doesnt seem to work in the game
+  - When you enter a guess you have to submit that guess twice so that it can be registered in the history of the game
+  - You can repeat a guessed number and it would still count it as a new guess
+  - The way that the game keeps track of the history of what numbers the user guesses, seems to be delayed and it puts in the history a number
+  that the user tried even though they had just changed it, it seems that you have to press twice in order to have the bug be registered
+  - Users have to clear the cache from the 3 dots menu on the side so that the game could restart again
+  - it appears to be that once use all the guesses that you have, the game basically doesn't let you run a new game, because the guesses left counter has not been restarted yet.
 
 ---
 
@@ -15,6 +26,8 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 - Which AI tools did you use on this project (for example: ChatGPT, Gemini, Copilot)?
 - Give one example of an AI suggestion that was correct (including what the AI suggested and how you verified the result).
 - Give one example of an AI suggestion that was incorrect or misleading (including what the AI suggested and how you verified the result).
+  - First I used Claude Code in my terminal, since I have been wanting to get more used to it.
+  - One example of an AI suggestion that was correct: 
 
 ---
 

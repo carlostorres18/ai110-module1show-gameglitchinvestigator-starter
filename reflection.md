@@ -27,16 +27,20 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 - Give one example of an AI suggestion that was correct (including what the AI suggested and how you verified the result).
 - Give one example of an AI suggestion that was incorrect or misleading (including what the AI suggested and how you verified the result).
   - First I used Claude Code in my terminal, since I have been wanting to get more used to it.
-  - One example of an AI suggestion that was correct: 
+  - One example of an AI suggestion that was correct: Was that the game would allow you to input the same number twice and count both times as different tries, so it investigated that logic and it was able to not only find where, but also explain in full detail how a fix would work for this bug
+  - One example of an AI suggestiong that was incorrect: It surprisingly did a good job when handling logic errors and stuff, but when it came down to creating the tests for the bugs that we were able to fix, Claude struggled a bit on creating the test and the program passing those tests. But after a change of prompt, the tests started to pass.
 
 ---
 
 ## 3. Debugging and testing your fixes
 
 - How did you decide whether a bug was really fixed?
+  - It was decided first by using the game manually after each fix that I would make, and then I would prompt the AI to make a test case so that I can test and see if there are any type of leaks in the program.
 - Describe at least one test you ran (manual or using pytest)  
   and what it showed you about your code.
+  - So one of the test that I manually ran was the test case for the testing whether a guess was within the range that the game predefines at the beginning 1-100 and guessing 999 should output a texts saying that the guess is not within the range of the game mode, and it should not take a try guess from the player.
 - Did AI help you design or understand any tests? How?
+  - Yes it did, after prompting the AI to create a test for a specific bug that I fixed at the time, it would make the test, and then explain how the test works inside the program including what functions it calls when running that specific test case.
 
 ---
 

@@ -47,8 +47,13 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 ## 4. What did you learn about Streamlit and state?
 
 - In your own words, explain why the secret number kept changing in the original app.
+  - Before any sort of fix was made, the check_guess function was broken and it would alternate the secret's type on every attempt. This is because the check_guess functions when it would receive a guess, ex: 40, it would receive "40" as a string and not 40 as an integer, which would make it feel as if the hint was moving.
+
 - How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit?
+  - Reruns makes it that every user interaction the application has, it causes the entire Python script to re-run from line 1. I would explain to my friend like this, if we were following a recipe for cooking and after everystep we make in the recipe we have to re-read the whole recipe again and do so during the entire process. For session state, to my friend I would say this, think of it as a sticky note that helps you remember values between runs, that way when you make a new run you can remember the value.
+
 - What change did you make that finally gave the game a stable secret number?
+  - The change that I made was that the session state guard would ensure that the random number function only ran once per game session, and not on every re-run. Lastly there is a check that would make it so that the program doesn't no more TypeError fallback.
 
 ---
 
@@ -56,5 +61,10 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 
 - What is one habit or strategy from this project that you want to reuse in future labs or projects?
   - This could be a testing habit, a prompting strategy, or a way you used Git.
+    - One habit that I would be reusing in future lab/projects would be for the AI to explain each bug one-by-one and explain how the bug is affecting the program as a whole and then making tests for those bugs one-by-one so that the AI is faster to see the problem and not get overwhelmed.
+
 - What is one thing you would do differently next time you work with AI on a coding task?
+  - One thing I would do different is to try to give the AI better prompts so that the AI can get my requests faster and it doesn't consume a lot of tokens.
+
 - In one or two sentences, describe how this project changed the way you think about AI generated code.
+  - The way this project changed the way I think about AI, is that AI is not here to replace Software Engineeners, or take away SE jobs, but rather improve the overall speed of a SE and make coding even much faster.
